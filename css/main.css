@@ -86,7 +86,158 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ------------Header and Footer Base Styles --------------*/
 
+header, footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:row wrap;
+}
+
+/* Header Styles */
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-divider header{
+}
+/*unplugged logo img not styled yet*/
+
+header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* -------------Mobile Base Styles-Homepage ---------------*/
+
+.title-front{}
+
+.hero-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-area h1{}
+
+  /*hero img not stlyed yet*/
+
+/*news letter sign up section, homepage*/
+section{}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-description h2{}
+
+.form-description p{}
+
+.form{}
+/*---unsure if form class should have display flex yet---*/
+.features{}
+
+.features .content-wrapper{}
+
+.feature-items{}
+
+.features .content-wrapper article{
+}
+
+.fontawesome-icon p{}
+  /*icons not styled yet*/
+.features-item-description p{}
+
+
+  /*Reviews section-Home page*/
+
+
+.features .content-wrapper{
+  /*css properties*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features h1{}
+
+.features h2{}
+
+.fontawesome-icon{}
+
+  /*img not styled yet*/
+
+  section .reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.reviews .content-wrapper article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews h3{}
+
+.reviews p{}
+
+/*----Footer section ----*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div .footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  display: flex;
+}
+
+.contact h3{}
+
+.contact address{}
+
+.social-icons{
+  display: flex;
+}
+
+.copyright{}
+.copyright p{}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,4 +411,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
