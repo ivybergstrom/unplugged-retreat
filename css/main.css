@@ -87,6 +87,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* ------------Header and Footer Base Styles --------------*/
+/*-total width of mobile pages 360px--*/
 
 header, footer{
   display: flex;
@@ -100,15 +101,18 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px 0;
 }
 
-.content-wrapper header{
+header .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.content-divider header{
+header .content-divider{
+  width: 50%;
 }
 /*unplugged logo img not styled yet*/
 
@@ -116,9 +120,12 @@ header nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 
-
+header nav ul{
+  width: 50%;
+}
 
 /* -------------Mobile Base Styles-Homepage ---------------*/
 
@@ -162,7 +169,10 @@ aside{
 
 .feature-items{}
 
-.features .content-wrapper article{
+.features article{
+  width: 89%;
+  align-items: center;
+  justify-content: center;
 }
 
 .fontawesome-icon p{}
@@ -189,7 +199,7 @@ aside{
 
   /*img not styled yet*/
 
-  section .reviews{
+section .reviews{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,9 +208,15 @@ aside{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 89%;
 }
-
-.reviews h3{}
+.reviews h2{
+  justify-content: center;
+  align-items: center;
+}
+.reviews h3{
+  width: 48.3%;
+}
 
 .reviews p{}
 
@@ -216,6 +232,7 @@ footer .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55%;
 }
 
 div .footer-content{
