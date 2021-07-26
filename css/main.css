@@ -111,7 +111,7 @@ header .content-wrapper{
   width: 100%;
 }
 
-header .content-divider{
+header .header-divider{
   width: 50%;
 }
 /*unplugged logo img not styled yet*/
@@ -165,14 +165,16 @@ aside{
 /*---unsure if form class should have display flex yet---*/
 .features{}
 
-.features .content-wrapper{}
+.features .content-wrapper{
+  width: 100%;
+}
 
 .feature-items{}
 
 .features article{
-  width: 89%;
   align-items: center;
   justify-content: center;
+  width: 89%;
 }
 
 .fontawesome-icon p{}
@@ -189,6 +191,7 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .features h1{}
@@ -233,21 +236,28 @@ footer .content-wrapper{
   justify-content: center;
   align-items: center;
   width: 55%;
+  margin: 50px 0;
+  width: 100%;
 }
 
 div .footer-content{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .contact{
   display: flex;
 }
 
-.contact h3{}
+.contact h3{
+  justify-content: center;
+}
 
-.contact address{}
+.contact address{
+  justify-content: center;
+}
 
 .social-icons{
   display: flex;
