@@ -106,10 +106,13 @@ header{
 
 header .content-wrapper{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 60%;
+  margin: 0;
 }
+
 
 header .header-divider{
   width: 50%;
@@ -120,9 +123,9 @@ header nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 100%;
 }
-
+/*--the class said to have the header nav width at 60%, but that is not wide enough to push the ul to the next line--*/
 header nav ul{
   width: 50%;
 }
@@ -131,10 +134,12 @@ header nav ul{
 
 .title-front{}
 
-.hero-area{
+.hero-area .content-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .hero-area h1{}
@@ -163,7 +168,9 @@ aside{
 
 .form{}
 /*---unsure if form class should have display flex yet---*/
-.features{}
+.features p{
+  margin: 0;
+}
 
 .features .content-wrapper{
   width: 100%;
@@ -230,6 +237,9 @@ footer{
   justify-content: center;
   align-items: center;
 }
+footer p{
+  margin: 0;
+}
 
 footer .content-wrapper{
   display: flex;
@@ -248,7 +258,6 @@ div .footer-content{
 }
 
 .contact{
-  display: flex;
 }
 
 .contact h3{
