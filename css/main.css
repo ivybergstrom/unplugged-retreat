@@ -545,13 +545,13 @@ aside{
     width: 30%;
   }
   .header-divider{
-    heighter: 0%;
+    height: 0%;
     width: 0%;
     margin: 0;
     padding: 0;
   }
   .content-wrapper .hero-area{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -576,6 +576,8 @@ aside{
 }
   .features article{
     width: 36.667%;
+    display: flex;
+    flex-flow: row wrap;
 
   }
   .reviews .content-wrapper{
