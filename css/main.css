@@ -117,14 +117,15 @@ header .content-wrapper{
 header .header-divider{
   width: 100%;
   height: 1px;
-  margni: 10px 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 /*unplugged logo img not styled yet*/
 
 header nav{
   display: flex;
   justify-content: space-around;
-  align-items: row wrap;
+  align-items: center;
+  flex-flow:row wrap;
   width: 60%;
 }
 
@@ -148,41 +149,33 @@ footer .content-wrapper{
   margin: 50px 0;
 }
 
-div .footer-content{
-}
 
-.contact{
+footer .contact{
   margin-bottom: 50px;
 }
 
-.contact h3{
-  justify-content: center;
-}
-
-.contact address{
-  justify-content: center;
-}
-
-.social-icons{
+footer .social-icons{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.social-icons p{
+
+footer .social-icons p{
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 footer .copyright{
   margin: 20px 0;
 }
-.copyright p{}
+
 
 /* -------------Mobile Base Styles-Homepage ---------------*/
 /*Hero Area*/
 
-.title-front{}
 
 .hero-area{
   display: flex;
@@ -208,15 +201,14 @@ aside{
 
 /*Form sign up*/
 
-.form-description{
-}
+.form-description{}
 
 .form-description h2{}
 
 .form-description p{}
 
 .form{}
-/*---unsure if form class should have display flex yet---*/
+
 
 /*Features*/
 .features{
@@ -285,11 +277,7 @@ aside{
   align-items: center;
 }
 
-.map{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+.map{}
 
 .contact-section{
   display: flex;
@@ -415,11 +403,149 @@ aside{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media only screen and (min-width: 768px){
-    /*tablet styles here*/
+@media only screen and (min-width: 768px){
+  /*tablet styles here*/
+  .content-wrapper{
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /*Header*/
+  header{
+    display: flex;
+    justify-content: center;
+  }
+
+  header .content-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav{
+    width:33.8%;
+  }
+  header nav ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header-divider{
+    display: none;
+  }
+  /*Hero Area*/
+
+  /*Aside*/
+
+  aside .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 50px 0;
+  }
+
+  aside .content-wrapper .form-description, aside .content-wraper .form{
+    width:100%;
+    margin: 0;
+  }
+
+                        /*Unsure if aside width is correct*/
+
+  /*Features*/
+  .features article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
    }
+   .features .features-item-description{
+     width: 50%;
+   }
+
+
+
+/*Reviews*/
+
+   .reviews .content-wrapper{
+     margin: 100px, 62px, 100px, 62;
+     /*Unsure if these are correct, based off measurements found in ps*/
+   }
+   .reviews article{
+     display: flex;
+     justify-content: center;
+   }
+
+   /*Footer*/
+   footer.content-wrapper{
+     width:100%;
+     margin: 100px 0;
+   }
+   .footer-content{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+  footer .contact{}
+
+  footer .copyright{
+    width:25%;
+  }
+  /*=========================================================================
+  About PAGE
+  ===========================================================================
+  */
+  .mission-content{
+    display:flex;
+    justify-content: space-between;
+    align-items:
+  }
+  .mission-content p{
+    width: 50%;
+  }
+  .contact-section .content-wrapper h2{
+    width:67%;
+  }
+  .contact-content{
+    /*not sure where this is in HTML, no tags for it exist. There is a content
+    tag and a content tag, but not a contact-content*/
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  /*=========================================================================
+  FAQ PAGE
+  ===========================================================================
+  */
+.faq .content-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+.faq h1{
+  width: 100%;
+}
+.faq h2{
+  width: 37%;
+}
+.faq p{
+  width: 37%;
+}
+ }
+
+
 @media only screen and (min-width: 1200px){
   /*desktop styles here*/
+  .form-description{
+    padding-left: 200px;
+  }
+  .form{
+    padding-right: 200px;
+  }
+  .features article{
+    width: 36.667%;
+  }
+  .reviews .content-wrapper{
+    margin: 100px, 115px, 100px, 115;
+  }
 }
 
 
