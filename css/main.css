@@ -534,14 +534,49 @@ aside{
 
 @media only screen and (min-width: 1200px){
   /*desktop styles here*/
-  .form-description{
-    padding-left: 200px;
+  .content-wrapper{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
   }
-  .form{
-    padding-right: 200px;
+  header nav{
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
   }
+  .header-divider{
+    heighter: 0%;
+    width: 0%;
+    margin: 0;
+    padding: 0;
+  }
+  .content-wrapper .hero-area{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  section h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  section .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+.features .content-wrapper{
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.fontawesmoe-icon p{
+  justify-content: center;
+}
   .features article{
     width: 36.667%;
+
   }
   .reviews .content-wrapper{
     margin: 100px, 115px, 100px, 115;
