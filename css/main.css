@@ -248,7 +248,7 @@ aside{
   /*Reviews section-Home page*/
 
 
-.revews{
+.reviews{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -466,7 +466,7 @@ aside{
 /*Reviews*/
 
    .reviews .content-wrapper{
-     margin: 100px, 62px, 100px, 62;
+     margin: 100px, 62px, 100px, 62px;
      /*Unsure if these are correct, based off measurements found in ps*/
    }
    .reviews article{
@@ -497,7 +497,7 @@ aside{
   .mission-content{
     display:flex;
     justify-content: space-between;
-    align-items:
+    align-items: center;
   }
   .mission-content p{
     width: 50%;
@@ -539,50 +539,41 @@ aside{
     margin-right: 10%;
     width: 100%;
   }
-  header nav{
-    display: flex;
-    flex-flow: row wrap;
-    width: 30%;
+  .hero-area h1{
+    width:
   }
-  .header-divider{
-    height: 0%;
-    width: 0%;
-    margin: 0;
-    padding: 0;
+  aside .content-wrapper{
+  justify-content: space-between;
   }
-  .content-wrapper .hero-area{
-    width: 80%;
-    display: flex;
-    justify-content: center;
+  aside .content-wrapper .form-description, aside .content-wrapper .form{
+    width: 40%;
   }
-  section h2{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  section .content-wrapper{
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-.features .content-wrapper{
-  display:flex;
-  flex-flow: row wrap;
+
+
+.features h2{
+  width:73%;
 }
 
-.fontawesmoe-icon p{
-  justify-content: center;
+.features article{
+  flex-basis:13.3333%;
 }
-  .features article{
-    width: 36.667%;
-    display: flex;
-    flex-flow: row wrap;
 
-  }
-  .reviews .content-wrapper{
-    margin: 100px, 115px, 100px, 115;
-  }
+.reviews article div{
+  width: 80%;
+}
+/*=============================================================================
+About page
+==============================================================================*/
+.mission h2, .contact-section .contact-wrapper h2{
+  width: 73.333%;
+}
+/*=============================================================================
+FAQ page
+==============================================================================*/
+.faq h2{
+  width: 100%;
+}
+
 }
 
 
