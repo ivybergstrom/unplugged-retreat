@@ -106,26 +106,26 @@ header{
 }
 
 header .content-wrapper{
+  align-items: center;
   display: flex;
   flex-flow:row wrap;
   justify-content: center;
-  align-items: center;
   margin: 0;
 }
 
 
 header .header-divider{
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 /*unplugged logo img not styled yet*/
 
 header nav{
+  flex-flow:row wrap;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow:row wrap;
   width: 60%;
 }
 
@@ -155,15 +155,15 @@ footer .contact{
 }
 
 footer .social-icons{
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  display: flex;
+  justify-content:center;
 }
 
 footer .social-icons p{
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 
@@ -193,10 +193,10 @@ section{}
 /*Aside*/
 
 aside{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 /*Form sign up*/
@@ -213,8 +213,8 @@ aside{
 /*Features*/
 .features{
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .features h2{
@@ -250,8 +250,8 @@ aside{
 
 .reviews{
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+    justify-content: center;
 }
 
 
@@ -271,19 +271,19 @@ aside{
      About Page
   ========================================================================== */
 .mission{
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .map{}
 
 .contact-section{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .contact-content p{
@@ -294,17 +294,17 @@ aside{
    FAQ Page
 ========================================================================== */
 .faq{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .faq .content-wrapper{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin: 50px 0 0 0;
 }
 
@@ -412,21 +412,19 @@ aside{
 
   /*Header*/
   header{
-    display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrapper{
     width:100%;
-    display: flex;
     justify-content: space-between;
   }
   header .nav{
-    width:33.8%;
+    width:20%;
   }
   header nav ul{
-    display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   header-divider{
@@ -438,45 +436,46 @@ aside{
 
   aside .content-wrapper{
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: space-between;
     margin: 50px 0;
   }
 
-  aside .content-wrapper .form-description, aside .content-wraper .form{
-    width:100%;
+  aside .content-wrapper .form-description,
+   aside .content-wraper .form{
+    width: 40%;
     margin: 0;
   }
 
-                        /*Unsure if aside width is correct*/
 
   /*Features*/
   .features article{
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
    }
    .features .features-item-description{
-     width: 50%;
+     width: 62%;
    }
 
 
 
 /*Reviews*/
 
-   .reviews .content-wrapper{
-     margin: 100px, 62px, 100px, 62px;
-     /*Unsure if these are correct, based off measurements found in ps*/
    }
    .reviews article{
      display: flex;
-     justify-content: center;
+     justify-content: space-between;
    }
+
+   .reviews article div {
+    width: 49%;
+  }
 
    /*Footer*/
    footer.content-wrapper{
-     width:100%;
+     width:65%;
      margin: 100px 0;
    }
    .footer-content{
@@ -485,87 +484,93 @@ aside{
      align-items: center;
    }
 
-  footer .contact{}
+  footer .contact{
+    margin-bottom: 0;
+  }
 
   footer .copyright{
-    width:25%;
+    width:100%;
   }
   /*=========================================================================
   About PAGE
   ===========================================================================
   */
   .mission-content{
+    align-items: center;
     display:flex;
     justify-content: space-between;
-    align-items: center;
   }
   .mission-content p{
-    width: 50%;
+    width: 45%;
   }
   .contact-section .content-wrapper h2{
-    width:67%;
+    width:80%;
   }
   .contact-content{
     /*not sure where this is in HTML, no tags for it exist. There is a content
     tag and a content tag, but not a contact-content*/
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   /*=========================================================================
   FAQ PAGE
   ===========================================================================
   */
+  header{
+    padding: 15px 0;
+  }
+
 .faq .content-wrapper{
-  display: flex;
-  flex-flow: row wrap;
+  justify-content: space-between;
 }
-.faq h1{
-  width: 100%;
+.faq-content{
+  flex-basis: 45%;
 }
 .faq h2{
-  width: 37%;
-}
-.faq p{
-  width: 37%;
+  width: 100%;
 }
  }
 
+/*=======================================================================
+DESKTOP STYLES===========================================================*/
 
 @media only screen and (min-width: 1200px){
   /*desktop styles here*/
   .content-wrapper{
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 100%;
+    max-width: 960px;
   }
+
+  /*Hero*/
   .hero-area h1{
-    width:
+    width: 60%;
   }
+
+  /*Aside*/
   aside .content-wrapper{
   justify-content: space-between;
   }
   aside .content-wrapper .form-description, aside .content-wrapper .form{
-    width: 40%;
+    width: 30%;
   }
-
+/*Features*/
 
 .features h2{
-  width:73%;
+  width:90%;
 }
 
 .features article{
-  flex-basis:13.3333%;
+  flex-basis:33%;
 }
 
 .reviews article div{
-  width: 80%;
+  width: 42%;
 }
 /*=============================================================================
 About page
 ==============================================================================*/
 .mission h2, .contact-section .contact-wrapper h2{
-  width: 73.333%;
+  width: 95%;
 }
 /*=============================================================================
 FAQ page
