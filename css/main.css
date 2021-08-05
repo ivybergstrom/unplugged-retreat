@@ -86,10 +86,55 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.content-wrapper{
-  width: 90%;
-  margin: 50px 0;
+/*General Styles*/
+html{
+  font-size: 62.5%;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a{
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1{
+  font-size: 3.6rem;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+}
+
+h3, h4{
+  font-family:  'Poppins', sans-sans-serif;
+  font-size: 3.6rem;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+img{}
+
+figure{}
+
+address{
+  font-style: normal;
+}
+
+.content-wrapper{}
+
+
+
 /* ------------Header and Footer Base Styles --------------*/
 /*-total width of mobile pages 360px--*/
 
