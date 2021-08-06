@@ -92,8 +92,14 @@ html{
 }
 
 body {
+  color: #d8dbe3;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
+}
+
+header{
+  background-color: #202322;
+  color: #e2e3ed;
 }
 
 ul, ol{
@@ -115,8 +121,8 @@ h2{
 }
 
 h3, h4{
-  font-family:  'Poppins', sans-sans-serif;
-  font-size: 3.6rem;
+  font-family: 'Poppins', sans-sans-serif;
+  font-size: 1.4rem;
 }
 
 p{
@@ -133,6 +139,31 @@ address{
 
 .content-wrapper{}
 
+  aside .form {
+    margin-top: 30px;
+  }
+
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
 
 /* ------------Header and Footer Base Styles --------------*/
@@ -218,7 +249,8 @@ footer .copyright{
 }
 
 
-/* -------------Mobile Base Styles-Homepage ---------------*/
+/* ---------
+----Mobile Base Styles-Homepage ---------------*/
 /*Hero Area*/
 
 
@@ -233,11 +265,13 @@ footer .copyright{
   /*hero img not stlyed yet*/
 
 /*news letter sign up section, homepage*/
-section{}
+section{
+}
 
 /*Aside*/
 
 aside{
+  background-color: #527158;
   align-items: center;
   display: flex;
   flex-flow: row wrap;
@@ -246,13 +280,17 @@ aside{
 
 /*Form sign up*/
 
-.form-description{}
+.form-description{
+  padding-left: 20px;
+}
 
 .form-description h2{}
 
 .form-description p{}
 
-.form{}
+.form{
+  padding: 20px;
+}
 
 
 /*Features*/
@@ -260,6 +298,8 @@ aside{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .features h2{
@@ -294,9 +334,12 @@ aside{
 
 
 .reviews{
+  color: #e2e3ed;
+  background-color: #2a423a;
   display: flex;
   flex-flow: row wrap;
-    justify-content: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 
@@ -508,15 +551,17 @@ aside{
 
 /*Reviews*/
 
-   }
+   
    .reviews article{
      display: flex;
      justify-content: space-between;
+
    }
 
    .reviews article div {
-    width: 49%;
+     width: 49%;
   }
+
 
    /*Footer*/
    footer.content-wrapper{
