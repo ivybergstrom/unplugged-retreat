@@ -369,13 +369,21 @@ aside{
 
 .reviews h2{
   margin-bottom: 40px;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
 }
 .reviews h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
   width: 55%;
   margin: 20px 0;
 }
 
-.reviews p{}
+.reviews p{
+  font-size: 1.6rem;
+}
 /* ==========================================================================
      About Page
   ========================================================================== */
