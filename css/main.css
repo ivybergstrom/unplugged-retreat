@@ -137,7 +137,9 @@ address{
   font-style: normal;
 }
 
-.content-wrapper{}
+.content-wrapper{
+  padding: 20px;
+}
 
   aside .form {
     margin-top: 30px;
@@ -266,7 +268,10 @@ footer .copyright{
   flex-flow:row wrap;
 }
 
-.hero-area h1{}
+.hero-area h1{
+  font-size: 3.8rem;
+  font-weight: normal;
+}
 
   /*hero img not stlyed yet*/
 
@@ -284,15 +289,23 @@ aside{
   justify-content: center;
 }
 
+
 /*Form sign up*/
 
 .form-description{
   padding-left: 20px;
 }
 
-.form-description h2{}
+.form-description h3, .form h3{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
 
-.form-description p{}
+.form-description p{
+  margin: 0;
+}
 
 .form{
   padding: 20px;
