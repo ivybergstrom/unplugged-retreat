@@ -194,13 +194,12 @@ header .header-divider{
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
+  border-bottom: #3a3a3a 1px solid;
 }
 /*unplugged logo img not styled yet*/
 
 header nav{
-  flex-flow:row wrap;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   width: 60%;
 }
@@ -208,8 +207,15 @@ header nav{
 header nav ul{
   display: flex;
   justify-content: space-around;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin: 0;
+  padding-left: 0;
+  text-transform: uppercase;
   width: 100%;
 }
+
+
 
 /*----Footer section ----*/
 
@@ -302,6 +308,7 @@ aside{
   padding: 20px;
 }
 
+
 .features h2{
   margin-bottom: 60px;
 }
@@ -311,7 +318,8 @@ aside{
   margin: 30px 0;
 }
 
-.features .feature-items{
+
+.features-items{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -551,7 +559,7 @@ aside{
 
 /*Reviews*/
 
-   
+
    .reviews article{
      display: flex;
      justify-content: space-between;
