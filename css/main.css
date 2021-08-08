@@ -95,11 +95,7 @@ body {
   color: #d8dbe3;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-}
-
-header{
-  background-color: #202322;
-  color: #e2e3ed;
+  font-size: 1.6rem;
 }
 
 ul, ol{
@@ -113,7 +109,7 @@ a{
 
 h1{
   font-size: 3.6rem;
-}
+}/*--example doesn't have this, at least not right here*/
 
 h2{
   font-family: 'Poppins', sans-serif;
@@ -121,12 +117,15 @@ h2{
 }
 
 h3, h4{
-  font-family: 'Poppins', sans-sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.4rem;
+  margin: 20px 0;
 }
 
 p{
   font-size: 1.6rem;
+  line-height: 1.285;
 }
 
 img{}
@@ -138,7 +137,8 @@ address{
 }
 
 .content-wrapper{
-  padding: 20px;
+  width: 90%;
+  margin: 50px 0;
 }
 
   aside .form {
@@ -173,16 +173,17 @@ address{
 
 header, footer{
   display: flex;
+  color: #e2e3ed;
   justify-content: center;
   align-items: center;
   flex-flow:row wrap;
+  background-color: #202322;
 }
 
 /* Header Styles */
 header{
   padding: 15px 0;
 }
-
 header .content-wrapper{
   align-items: center;
   display: flex;
@@ -193,27 +194,27 @@ header .content-wrapper{
 
 
 header .header-divider{
+  background: #3a3a3a;
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
-  border-bottom: #3a3a3a 1px solid;
 }
 /*unplugged logo img not styled yet*/
 
 header nav{
   display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
   align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-transform: uppercase;
   width: 60%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
-  font-size: 1.4rem;
-  font-weight: bolder;
-  margin: 0;
-  padding-left: 0;
-  text-transform: uppercase;
   width: 100%;
 }
 
@@ -222,8 +223,8 @@ header nav ul{
 /*----Footer section ----*/
 
 footer{
+  text-align:center;
   flex-direction: column;
-  background-color: #202322;
 }
 
 
@@ -282,8 +283,10 @@ footer .copyright{
 }
 
 .hero-area h1{
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 3.8rem;
-  font-weight: normal;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
   /*hero img not stlyed yet*/
@@ -302,12 +305,32 @@ aside{
   justify-content: center;
 }
 
-
-/*Form sign up*/
-
-.form-description{
-  padding-left: 20px;
+aside .form{
+  margin-top: 30px;
 }
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 .form-description h3, .form h3{
   font-family: 'Poppins', sans-serif;
@@ -320,9 +343,6 @@ aside{
   margin: 0;
 }
 
-.form{
-  padding: 20px;
-}
 
 
 /*Features*/
@@ -330,8 +350,6 @@ aside{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  text-align: center;
-  padding: 20px;
 }
 
 
@@ -353,6 +371,7 @@ aside{
 }
 
 .features p{
+  text-align: center;
   margin: 0;
 }
 
@@ -368,7 +387,6 @@ aside{
 
 
 .reviews{
-  color: #e2e3ed;
   background-color: #2a423a;
   display: flex;
   flex-flow: row wrap;
@@ -382,21 +400,16 @@ aside{
 
 .reviews h2{
   margin-bottom: 40px;
-  line-height: normal;
-  font-family: 'Poppins', sans-serif;
-  font-weight: normal;
+  line-height: 1;
 }
 .reviews h3{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 1.8rem;
   width: 55%;
   margin: 20px 0;
 }
 
-.reviews p{
-  font-size: 1.6rem;
-}
+
 /* ==========================================================================
      About Page
   ========================================================================== */
