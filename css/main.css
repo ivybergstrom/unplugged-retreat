@@ -223,7 +223,10 @@ header nav ul{
 
 footer{
   flex-direction: column;
+  background-color: #202322;
 }
+
+
 footer p{
   margin: 0;
 }
@@ -236,6 +239,16 @@ footer .content-wrapper{
 
 footer .contact{
   margin-bottom: 50px;
+}
+
+footer h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+address{
+  text-align: center;
 }
 
 footer .social-icons{
