@@ -115,6 +115,7 @@ h1{
 h2{
   font-family: 'Poppins', sans-serif;
   font-size: 2.8rem;
+  font-weight: 500;
 }
 
 h3, h4{
@@ -129,9 +130,6 @@ p{
   line-height: 1.285;
 }
 
-img{}
-
-figure{}
 
 address{
   font-style: normal;
@@ -142,10 +140,9 @@ address{
   margin: 50px 0;
 }
 
-  aside .form {
-    margin-top: 30px;
-  }
-
+img{
+  width: 100%;
+}
 
 
 /* ------------Header and Footer Base Styles --------------*/
@@ -260,7 +257,13 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow:row wrap;
+  background: url('../img/hero.PNG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+
 
 .hero-area h1{
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -330,6 +333,10 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-image: url('../img/background-amenities.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -569,7 +576,7 @@ h3{
     justify-content: space-between;
   }
 
-  header-divider{
+  .header-divider{
     display: none;
   }
   /*Hero Area*/
@@ -690,8 +697,17 @@ DESKTOP STYLES===========================================================*/
 
 @media only screen and (min-width: 1200px){
   /*desktop styles here*/
+
+  /*General styles*/
+
+
   .content-wrapper{
     max-width: 960px;
+  }
+
+  /*Header*/
+  .header-divider{
+    display: none;
   }
 
   /*Hero*/
