@@ -293,6 +293,8 @@ aside .form{
   margin-top: 30px;
 }
 
+
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -319,7 +321,7 @@ input[type=button] {
 .form-description h3, .form h3{
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -394,7 +396,7 @@ input[type=button] {
 }
 .reviews h3{
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   width: 55%;
   margin: 20px 0;
 }
@@ -579,22 +581,33 @@ h3{
   header .content-wrapper{
     width:100%;
     justify-content: space-between;
+    flex-flow: row wrap;
   }
+
+header figure{
+  margin: 0;
+  flex-basis: 220px;
+}
+
   header .nav{
     width:20%;
   }
   header nav ul{
-    justify-content: space-between;
+    justify-content: inherit;
   }
 
   .header-divider{
     display: none;
   }
   /*Hero Area*/
+.hero-area{
+  background: url('../img/mask-tablet.PNG');
+}
 
   /*Aside*/
 
   aside .content-wrapper{
+    align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -608,12 +621,31 @@ h3{
   }
 
 
+
+.form{
+  flex-basis: 280px;
+  margin:0;
+}
+
+.form h3{
+  font-size: 2.8rem;
+}
+.form-description h3{
+  font-size: 2.8rem;
+}
+
   /*Features*/
+
+  .features .content-wrapper{
+    flex-basis: 71.614%;
+  }
+
   .features article{
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    flex-basis: 31.818%;
    }
    .features .features-item-description{
      width: 62%;
@@ -634,6 +666,18 @@ h3{
      width: 49%;
   }
 
+  .reviews figure{
+  flex-basis: 50%;
+}
+  .reviews h3{
+    line-height: 1;
+    margin: 0;
+    width: 85%;
+  }
+  .reviews p{
+    margin: 0;
+    line-height: 1;
+  }
 
    /*Footer*/
    footer.content-wrapper{
@@ -657,6 +701,7 @@ h3{
   About Page Tablets
   ===========================================================================
   */
+
   .mission-content{
     align-items: center;
     display:flex;
@@ -722,6 +767,9 @@ DESKTOP STYLES===========================================================*/
   }
 
   /*Hero*/
+  .hero-area{
+    background: url('../img/hero.PNG');
+  }
   .hero-area h1{
     width: 60%;
   }
