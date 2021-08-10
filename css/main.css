@@ -258,7 +258,7 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow:row wrap;
-  background: url('../img/hero.PNG');
+  background: url('../img/mask.PNG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -383,7 +383,9 @@ input[type=button] {
 }
 
 
-  /*img not styled yet*/
+.reviews figure{
+  margin: 0;
+}
 
 
 .reviews h2{
