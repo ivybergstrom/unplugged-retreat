@@ -144,6 +144,9 @@ img{
   width: 100%;
 }
 
+figure{
+  margin: 0;
+}
 
 /* ------------Header and Footer Base Styles --------------*/
 /*-total width of mobile pages 360px--*/
@@ -169,6 +172,14 @@ header .content-wrapper{
   margin: 0;
 }
 
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 header .header-divider{
   background: #3a3a3a;
@@ -258,7 +269,7 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow:row wrap;
-  background: url('../img/hero.jpg') #333;
+  background: url('../img/hero-small.jpg') #333;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -336,7 +347,7 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background-image: url('../img/background-amenities.png');
+  background-image: url('../img/background-amenities-small.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -601,7 +612,10 @@ header figure{
   }
   /*Hero Area*/
 .hero-area{
-  background: url('../img/hero.jpg') #333;
+  background: url('../img/hero-small.jpg') #333;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
   /*Aside*/
@@ -769,6 +783,9 @@ DESKTOP STYLES===========================================================*/
   /*Hero*/
   .hero-area{
     background: url('../img/hero.jpg') #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .hero-area h1{
     width: 60%;
@@ -793,6 +810,16 @@ DESKTOP STYLES===========================================================*/
 
 .reviews article div{
   width: 42%;
+}
+
+.reviews article h3{
+  width: 55%;
+  line-height: 1.285;
+}
+
+.reviews article p{
+  line-height: 1.5;
+  margin-top: 10px;
 }
 /*=============================================================================
 About page
