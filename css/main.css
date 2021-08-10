@@ -258,7 +258,7 @@ footer .copyright{
   display: flex;
   justify-content: center;
   flex-flow:row wrap;
-  background: url('../img/mask.PNG');
+  background: url('../img/mask.PNG') #333;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -601,7 +601,7 @@ header figure{
   }
   /*Hero Area*/
 .hero-area{
-  background: url('../img/mask-tablet.PNG');
+  background: url('../img/mask-tablet.PNG') #333;
 }
 
   /*Aside*/
@@ -768,7 +768,7 @@ DESKTOP STYLES===========================================================*/
 
   /*Hero*/
   .hero-area{
-    background: url('../img/hero.PNG');
+    background: url('../img/hero.PNG') #333;
   }
   .hero-area h1{
     width: 60%;
