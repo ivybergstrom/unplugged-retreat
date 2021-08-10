@@ -407,10 +407,14 @@ input[type=button] {
   justify-content: center;
 }
 
-.map{}
+.map figure{
+  width: 100%;
+  margin: 0;
+}
 
 .contact-section{
   align-items: center;
+  background-color: #2a423a;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
