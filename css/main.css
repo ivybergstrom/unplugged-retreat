@@ -420,6 +420,10 @@ input[type=button] {
   justify-content: center;
 }
 
+.contact-section h2{
+  margin: 0;
+}
+
 .contact-content p{
   margin: 0;
 }
