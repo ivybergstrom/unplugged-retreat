@@ -247,6 +247,11 @@ footer .social-icons{
   justify-content:center;
 }
 
+.social-icons a{
+  font-size: 2rem;
+  margin:2.7rem;
+}
+
 footer .social-icons p{
   align-items: center;
   display: flex;
