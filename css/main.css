@@ -252,6 +252,7 @@ footer .social-icons p {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,11 +263,6 @@ footer .social-icons p {
   margin:2.7rem;
 }
 
-footer .social-icons p{
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
 
 
 
@@ -691,9 +687,6 @@ header figure{
     justify-content: center;
     flex-basis: 31.818%;
    }
-   .features .features-item-description{
-     width: 62%;
-   }
 
 
 
@@ -736,6 +729,7 @@ header figure{
 
   footer .contact{
     margin-bottom: 0;
+    margin-right: 70px;
   }
 
   footer .copyright{
@@ -756,7 +750,14 @@ header figure{
   }
   .contact-section .content-wrapper h2{
     width:80%;
+    margin-bottom: 50px;
   }
+  .contact-section h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+
   .contact-content{
     /*not sure where this is in HTML, no tags for it exist. There is a content
     tag and a content tag, but not a contact-content*/
@@ -789,6 +790,9 @@ header figure{
       font-size: 1.8rem;
       line-height: 1.125;
   }
+  .faq h4{
+    margin: 0;
+  }
 
  }
 
@@ -816,9 +820,12 @@ DESKTOP STYLES===========================================================*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 600px;
   }
   .hero-area h1{
     width: 60%;
+    font-size: 5rem;
+    margin-top: 0;
   }
 
   /*Aside*/
