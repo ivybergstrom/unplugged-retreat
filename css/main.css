@@ -597,6 +597,18 @@ input[type=button] {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/*==========================MOBILE STYLES===================================*/
+
+    /*==========GALAXY FOLD========*/
+
+@media only screen and (min-width: 280px){
+  /*HOME PAGE*/
+  .hero-area h1{
+    font-size: 3rem;
+  }
+}
+    /*=======ALL OTHER MOBILE DEVICE=====*/
 @media only screen and (min-width: 768px){
   /*tablet styles here*/
   /*General styles*/
